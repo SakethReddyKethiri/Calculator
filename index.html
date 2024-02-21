@@ -1,0 +1,50 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">  
+     <link rel="icon" href="tlogo.png">
+    <title>Calculator </title>
+</head>
+<body>
+       <div class="calculator">
+            <h1>Calculator</h1>
+            <input type="text" placeholder="0" id="display">
+        
+            <div>
+                    <button class="ope" onclick="clearDisplay()">AC</button>
+                    <button class="ope" onclick="">DEL</button>
+                    <button class="op" onclick="addToDisplay('%')">%</button>
+                    <button class="op" onclick="addToDisplay('/')">/</button>
+            </div>
+        
+            <div>
+                    <button onclick="addToDisplay('7')">7</button>
+                    <button onclick="addToDisplay('8')">8</button>
+                    <button onclick="addToDisplay('9')">9</button>
+                    <button class="op" onclick="addToDisplay('*')">*</button>
+            </div>
+            <div>
+                    <button onclick="addToDisplay('4')">4</button>
+                    <button onclick="addToDisplay('5')">5</button>
+                    <button onclick="addToDisplay('6')">6</button>
+                    <button class="op" onclick="addToDisplay('-')">-</button>
+            </div>
+            <div>
+                    <button onclick="addToDisplay('1')">1</button>
+                    <button onclick="addToDisplay('2')">2</button>
+                    <button onclick="addToDisplay('3')">3</button>
+                    <button class="op" onclick="addToDisplay('+')">+</button>
+            </div>
+            <div>
+                    <button onclick="addToDisplay('00')">00</button>
+                    <button onclick="addToDisplay('0')">0</button>
+                    <button class="point" onclick="addToDisplay('.')">.</button>
+                    <button class="equal" onclick="calculate()">=</button>
+            </div>
+
+      </div>
+
+      <script src="main.js"></script>
+
+</body></html>
